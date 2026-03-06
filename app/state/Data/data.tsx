@@ -1,9 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+type PokemonType = {
+  type: {
+    name: string;
+    url: string;
+  };
+};
+
 export type initialType = {
   pokemons: {
     name: string;
     image: string;
+    imageBack: string;
+    types: PokemonType[];
   }[];
 };
 
